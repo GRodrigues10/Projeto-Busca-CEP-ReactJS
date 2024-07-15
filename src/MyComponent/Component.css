@@ -1,0 +1,133 @@
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+h1{
+
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.445);
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    margin-top: 20px;
+}
+
+input{
+    padding: 5px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+
+}
+
+input::placeholder{
+    color: white;
+   
+    font-family: 'Poppins';
+}
+
+button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.controls{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 3px 3px 6px #0000003f;
+    animation-name: flipTitle;
+    animation-duration: 1s;
+    
+}
+
+
+
+.content{
+    background-color: rgba(0, 0, 0, 0.418);
+    color: white;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    width: 500px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.493);
+    margin-bottom: 20px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+span{
+    margin-top: 8px;
+}
+
+.lightblue{
+    color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.lightblue:hover{
+    color: hsl(195, 53%, 59%);
+}
+.iconBlue{
+    margin-right: 5px;
+    
+}
+
+
+
+
+/* Animations */
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes flipTitle{
+    from{
+        transform: rotateX(90deg);
+    }
+
+    to{
+        transform: rotateX(0deg);
+    }
+}
